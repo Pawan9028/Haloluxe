@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="com.haloluxe.testUtils.Listener"></listener>
+	</listeners>
+  <test thread-count="6" name="Test">
+    <classes>
+      <class name="com.haloluxe.test.LogInTest"/>
+      <class name="com.haloluxe.test.ForgotPassTest"/>
+      <class name="com.haloluxe.test.ContactUs_Test"/>
+      <class name="com.haloluxe.test.LogoutTest"/>
+      <class name="com.haloluxe.test.HomePageTest"/>
+      <class name="com.haloluxe.test.AddToCartTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

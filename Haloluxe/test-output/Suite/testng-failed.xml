@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.haloluxe.testUtils.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.haloluxe.test.LogInTest">
+        <methods>
+          <include name="VerifyLogInWithInvalidCredential"/>
+          <include name="VerifyLogInWithInvalidEmailAndValidPass"/>
+          <include name="VerifyLogInWithoutProvidingAnyCredential"/>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+          <include name="loadObject"/>
+          <include name="VerifyLogInWithInvalidPassAndValidEmail"/>
+        </methods>
+      </class> <!-- com.haloluxe.test.LogInTest -->
+      <class name="com.haloluxe.test.HomePageTest">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="VerifyCollectionDropDown"/>
+          <include name="CloseBrowser"/>
+          <include name="loadObject"/>
+        </methods>
+      </class> <!-- com.haloluxe.test.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
